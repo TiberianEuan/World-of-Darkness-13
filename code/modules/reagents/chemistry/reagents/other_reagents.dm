@@ -1613,7 +1613,7 @@
 	description = "For those that need a more creative way to roll out a red carpet."
 	reagent_state = LIQUID
 	color = "#771100"
-	taste_description = "carpet" // Your tounge feels furry.
+	taste_description = "carpet" // Your tongue feels furry.
 	var/carpet_type = /turf/open/floor/carpet
 
 /datum/reagent/carpet/expose_turf(turf/exposed_turf, reac_volume)

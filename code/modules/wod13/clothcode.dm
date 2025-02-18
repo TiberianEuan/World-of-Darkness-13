@@ -753,7 +753,7 @@
 
 /obj/item/clothing/suit/vampire/trench/archive
 	name = "rich trenchcoat"
-	desc = "Best choise for pleasant life... or not."
+	desc = "Best choice for pleasant life... or not."
 	icon_state = "trench3"
 	armor = list(MELEE = 10, BULLET = 0, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 0, FIRE = 0, ACID = 10, WOUND = 10)
 

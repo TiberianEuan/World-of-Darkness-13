@@ -689,8 +689,8 @@ SUBSYSTEM_DEF(job)
 	var/hpc = CONFIG_GET(number/hard_popcap)
 	var/epc = CONFIG_GET(number/extreme_popcap)
 	if(hpc || epc)
-		var/relevent_cap = max(hpc, epc)
-		if((initial_players_to_assign - unassigned.len) >= relevent_cap)
+		var/relevant_cap = max(hpc, epc)
+		if((initial_players_to_assign - unassigned.len) >= relevant_cap)
 			return 1
 	return 0
 

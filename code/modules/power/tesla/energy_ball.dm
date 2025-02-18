@@ -233,7 +233,7 @@
 	//This also means we have no need to track distance, as the doview() proc does it all for us.
 
 	//Darkness fucks oview up hard. I've tried dview() but it doesn't seem to work
-	//I hate existance
+	//I hate existence
 	for(var/a in typecache_filter_multi_list_exclusion(oview(zap_range+2, source), things_to_shock, blacklisted_tesla_types))
 		var/atom/A = a
 		if(!(zap_flags & ZAP_ALLOW_DUPLICATES) && LAZYACCESS(shocked_targets, A))

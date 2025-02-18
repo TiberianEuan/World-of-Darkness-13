@@ -9,7 +9,7 @@ export const Gmail = props => {
     <div className="gmail">
       <div className="header">
         <div className="nav-link active-link">Gmail</div>
-        <div className="header-link">{app.email_adress}</div>
+        <div className="header-link">{app.email_address}</div>
       </div>
       <div className="search-header">
         <div className="gmail-icon">
@@ -111,24 +111,24 @@ const ComposeEmail = (props, context) => {
       />
       <div className="compose-body">
         <div className="compose-info">
-          <div className="compose-reciever">
-            <div className="reciever-info">To:</div>
+          <div className="compose-receiver">
+            <div className="receiver-info">To:</div>
             <Input
               onInput={(e, value) => {
                 setTo(value);
               }}
               value={to}
-              className="reciever-input reciever-to"
+              className="receiver-input receiver-to"
             />
           </div>
-          <div className="compose-reciever">
-            <div className="reciever-info">Subject:</div>
+          <div className="compose-receiver">
+            <div className="receiver-info">Subject:</div>
             <TextArea
               onInput={(e, value) => {
                 setSubject(value);
               }}
               value={subject}
-              className="reciever-input"
+              className="receiver-input"
             />
           </div>
         </div>

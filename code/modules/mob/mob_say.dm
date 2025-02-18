@@ -112,7 +112,7 @@
 ///The amount of items we are looking for in the message
 #define MESSAGE_MODS_LENGTH 6
 /**
- * Extracts and cleans message of any extenstions at the begining of the message
+ * Extracts and cleans message of any extenstions at the beginning of the message
  * Inserts the info into the passed list, returns the cleaned message
  *
  * Result can be

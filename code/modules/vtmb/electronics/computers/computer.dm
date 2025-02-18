@@ -47,7 +47,7 @@ GLOBAL_LIST_EMPTY(vampire_computers)
 		if(C.main)
 			if(owner != "none")
 				var/datum/app/gmail/main_gmail = C.apps[3]
-				main_gmail.send_email("Hello! This message is from [owner]'s computer.", "Hello!", gmail.email_adress)
+				main_gmail.send_email("Hello! This message is from [owner]'s computer.", "Hello!", gmail.email_address)
 
 /obj/vampire_computer/attack_hand(mob/user)
 	. = ..()
@@ -193,7 +193,7 @@ GLOBAL_LIST_EMPTY(vampire_computers)
 				throw_error("You must write a subject!")
 				return TRUE
 			else if(!params["to"])
-				throw_error("You must write a reciever adress!")
+				throw_error("You must write a receiver adress!")
 				return TRUE
 			var/sended = gmail.send_email(params["message"], params["subject"], params["to"])
 			if(!sended)

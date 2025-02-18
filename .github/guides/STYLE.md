@@ -66,7 +66,7 @@ This does NOT mean that you can access it everywhere like a global var. Instead,
 
 Isn't that confusing?
 
-There is also an undocumented keyword called `static` that has the same behaviour as global but more correctly describes BYOND's behaviour. Therefore, we always use static instead of global where we need it, as it reduces suprise when reading BYOND code.
+There is also an undocumented keyword called `static` that has the same behaviour as global but more correctly describes BYOND's behaviour. Therefore, we always use static instead of global where we need it, as it reduces surprise when reading BYOND code.
 
 ### Use early returns
 Do not enclose a proc in an if-block when returning on a condition is more feasible

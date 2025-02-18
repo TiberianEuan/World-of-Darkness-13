@@ -36,7 +36,7 @@
 	var/buildstage = 2 // 2 = complete, 1 = no wires, 0 = circuit gone
 	COOLDOWN_DECLARE(last_alarm)
 	var/area/myarea = null
-	//Has this firealarm been triggered by its enviroment?
+	//Has this firealarm been triggered by its environment?
 	var/triggered = FALSE
 
 /obj/machinery/firealarm/Initialize(mapload, dir, building)

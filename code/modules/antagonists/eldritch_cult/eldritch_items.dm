@@ -12,7 +12,7 @@
 	if(!IS_HERETIC(user))
 		return
 	if(!target)
-		to_chat(user,"<span class='warning'>No target could be found. Put the living heart on a transmutation rune and activate the rune to recieve a target.</span>")
+		to_chat(user,"<span class='warning'>No target could be found. Put the living heart on a transmutation rune and activate the rune to receive a target.</span>")
 		return
 	var/dist = get_dist(get_turf(user),get_turf(target))
 	var/dir = get_dir(get_turf(user),get_turf(target))
@@ -232,7 +232,7 @@
 
 /obj/item/clothing/mask/void_mask
 	name = "Abyssal Mask"
-	desc = "Mask created from the suffering of existance, you can look down it's eyes, and notice something gazing back at you."
+	desc = "Mask created from the suffering of existence, you can look down it's eyes, and notice something gazing back at you."
 	icon_state = "mad_mask"
 	inhand_icon_state = "mad_mask"
 	w_class = WEIGHT_CLASS_SMALL

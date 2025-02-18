@@ -287,7 +287,7 @@ GLOBAL_LIST_EMPTY(selectable_races)
  * * excluded_zones - list, add zone defines to block organs inside of the zones from getting handled. see headless mutation for an example
  */
 /datum/species/proc/regenerate_organs(mob/living/carbon/C,datum/species/old_species,replace_current=TRUE,list/excluded_zones)
-	//what should be put in if there is no mutantorgan (brains handled seperately)
+	//what should be put in if there is no mutantorgan (brains handled separately)
 	var/list/slot_mutantorgans = list(ORGAN_SLOT_BRAIN = mutantbrain, ORGAN_SLOT_HEART = mutantheart, ORGAN_SLOT_LUNGS = mutantlungs, ORGAN_SLOT_APPENDIX = mutantappendix, \
 	ORGAN_SLOT_EYES = mutanteyes, ORGAN_SLOT_EARS = mutantears, ORGAN_SLOT_TONGUE = mutanttongue, ORGAN_SLOT_LIVER = mutantliver, ORGAN_SLOT_STOMACH = mutantstomach)
 
@@ -770,7 +770,7 @@ GLOBAL_LIST_EMPTY(selectable_races)
  */
 /datum/species/proc/handle_mutant_bodyparts(mob/living/carbon/human/H, forced_colour)
 	var/list/bodyparts_to_add = mutant_bodyparts.Copy()
-	var/list/relevent_layers = list(BODY_BEHIND_LAYER, BODY_ADJ_LAYER, BODY_FRONT_LAYER)
+	var/list/relevant_layers = list(BODY_BEHIND_LAYER, BODY_ADJ_LAYER, BODY_FRONT_LAYER)
 	var/list/standing	= list()
 
 	H.remove_overlay(BODY_BEHIND_LAYER)
@@ -876,7 +876,7 @@ GLOBAL_LIST_EMPTY(selectable_races)
 
 	var/g = (H.body_type == FEMALE) ? "f" : "m"
 
-	for(var/layer in relevent_layers)
+	for(var/layer in relevant_layers)
 		var/layertext = mutant_bodyparts_layertext(layer)
 
 		for(var/bodypart in bodyparts_to_add)
@@ -1741,7 +1741,7 @@ GLOBAL_LIST_EMPTY(selectable_races)
 /**
  * Used to normalize the skin temperature on living mobs
  *
- * The core temp effects the skin, then the enviroment effects the skin, then we refect that back to the core.
+ * The core temp effects the skin, then the environment effects the skin, then we refect that back to the core.
  * This happens even when dead so bodies revert to room temp over time.
  * vars:
  * * humi (required) The mob we will targeting
@@ -1755,7 +1755,7 @@ GLOBAL_LIST_EMPTY(selectable_races)
 
 	humi.adjust_coretemperature(skin_core_change)
 
-	// get the enviroment details of where the mob is standing
+	// get the environment details of where the mob is standing
 	var/turf/T = get_turf(humi)
 	var/datum/gas_mixture/environment = T.return_air()
 	if(!environment) // if there is no environment (nullspace) drop out here.

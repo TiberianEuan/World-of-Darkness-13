@@ -535,7 +535,7 @@
 			return
 	A.Bumped(src)
 
-///Sets the anchored var and returns if it was sucessfully changed or not.
+///Sets the anchored var and returns if it was successfully changed or not.
 /atom/movable/proc/set_anchored(anchorvalue)
 	SHOULD_CALL_PARENT(TRUE)
 	if(anchored == anchorvalue)

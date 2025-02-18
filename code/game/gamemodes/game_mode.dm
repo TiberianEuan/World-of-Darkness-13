@@ -364,8 +364,8 @@
 		else												// Not enough scrubs, ABORT ABORT ABORT
 			break
 
-	return candidates		// Returns: The number of people who had the antagonist role set to yes, regardless of recomended_enemies, if that number is greater than recommended_enemies
-							//			recommended_enemies if the number of people with that role set to yes is less than recomended_enemies,
+	return candidates		// Returns: The number of people who had the antagonist role set to yes, regardless of recommended_enemies, if that number is greater than recommended_enemies
+							//			recommended_enemies if the number of people with that role set to yes is less than recommended_enemies,
 							//			Less if there are not enough valid players in the game entirely to make recommended_enemies.
 
 

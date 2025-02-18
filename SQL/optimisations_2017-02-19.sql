@@ -9,7 +9,7 @@ For instance `death`.`bruteloss` is now SMALLINT and won't accept any values ove
 Data in this table can thus be truncated using a query such as:
 UPDATE `[database]`.`[table]` SET `[column]` = LEAST(`[column]`, [max column size])
 To truncate a text field you would have to use SUBSTRING(), however I don't suggest you truncate any text fields.
-If you wish to instead preserve this data you will need to modify the schema and queries to accomodate.
+If you wish to instead preserve this data you will need to modify the schema and queries to accommodate.
 
 Additionally, you may encounter the error "Error Code: 1411. Incorrect string value: '[query]' for function inet_aton".
 This is due to a bug with the default sql_mode in MySQL version 5.7, wherein a value of '' cannot be passed to INET_ATON() without error, see here for reference: https://bugs.mysql.com/bug.php?id=82280

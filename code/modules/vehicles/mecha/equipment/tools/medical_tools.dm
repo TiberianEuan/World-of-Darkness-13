@@ -520,7 +520,7 @@
 	energy_drain = 10
 	range = MECHA_MELEE|MECHA_RANGED
 	equip_cooldown = 0
-	///The medical gun doing the actual healing. yes its wierd but its better than copypasting the entire thing
+	///The medical gun doing the actual healing. yes its weird but its better than copypasting the entire thing
 	var/obj/item/gun/medbeam/mech/medigun
 	custom_materials = list(/datum/material/iron = 15000, /datum/material/glass = 8000, /datum/material/plasma = 3000, /datum/material/gold = 8000, /datum/material/diamond = 2000)
 	material_flags = MATERIAL_NO_EFFECTS

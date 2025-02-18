@@ -56,13 +56,13 @@
 	title = "Gmail"
 	app_type = "gmail"
 	var/list/datum/email/emails = list()
-	var/email_adress = "test@gmail.com"
+	var/email_address = "test@gmail.com"
 	var/screen = 1
 	var/datum/email/current_email
 
 /datum/app/gmail/data()
 	. = ..()
-	.+=list("email_adress" = email_adress)
+	.+=list("email_address" = email_address)
 	var/list/data_emails = list()
 	for(var/datum/email/email in emails)
 		var/list/data_email = email.to_data()
@@ -77,10 +77,10 @@
 
 
 /datum/app/gmail/proc/send_email(param_message, params_subject, params_to)
-	var/datum/email/email = new (email_adress, param_message, params_subject)
+	var/datum/email/email = new (email_address, param_message, params_subject)
 	for(var/obj/vampire_computer/C in GLOB.vampire_computers)
 		var/datum/app/gmail/gmail = C.apps[3]
-		if(gmail.email_adress == params_to)
+		if(gmail.email_address == params_to)
 			gmail.emails.Add(email)
 			screen = 1
 			return TRUE
@@ -93,7 +93,7 @@
 	newEmail += pick("1", "2", "3", "4", "5", "6", "7", "8", "9", "0")
 	newEmail += pick("1", "2", "3", "4", "5", "6", "7", "8", "9", "0")
 	newEmail += "@gmail.com"
-	email_adress = newEmail
+	email_address = newEmail
 
 /datum/email
 	var/sender

@@ -727,7 +727,7 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 	if(power_changes)
 		power = max(power - min(((power/500)**3) * powerloss_inhibitor, power * 0.83 * powerloss_inhibitor) * (1 - (0.2 * psyCoeff)),0)
 	//After this point power is lowered
-	//This wraps around to the begining of the function
+	//This wraps around to the beginning of the function
 	//Handle high power zaps/anomaly generation
 	if(power > POWER_PENALTY_THRESHOLD || damage > damage_penalty_point) //If the power is above 5000 or if the damage is above 550
 		var/range = 4

@@ -223,7 +223,7 @@
 /datum/plant_gene/trait/proc/on_throw_impact(obj/item/food/grown/G, atom/target)
 	return
 
-///This proc triggers when the tray processes and a roll is sucessful, the success chance scales with production.
+///This proc triggers when the tray processes and a roll is successful, the success chance scales with production.
 /datum/plant_gene/trait/proc/on_grow(obj/machinery/hydroponics/H)
 	return
 
